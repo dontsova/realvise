@@ -1,4 +1,4 @@
-/* Nulling ========================= */
+/* nulling =========================== */
 *,
 ::before,
 ::after {
@@ -36,16 +36,28 @@ body {
     font-size: 14px;
     color: #252b42;
 }
-/* ----------------- */
+/* service ---------------------------- */
 .wrapper {
-    min-height: 100%;
-    overflow: hidden;
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
-/* ----------------- */
 [class*="__container"] {
   margin: 0 auto;
   padding: 0 15px; /* safe zone for container */
   max-width: 1076px; /* 1046 + 30px safe zone */
+}
+._ibg {
+  position: relative;
+}
+._ibg img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
 }
 /* Header ============================= */
 .header {
@@ -86,10 +98,94 @@ body {
   font-weight: 600;
   line-height: calc(24 / 14 * 100%); /* 24px / 14px * 100% = 171% */
 }
-
+/* main =========================================== */
+.page {
+  flex: 1 1 auto;
+}
+.page__main-block {
+}
+/* main-block ===================================== */
+.main-block {
+  position: relative;
+}
+.main-block__container {
+}
+.main-block__body {
+  position: relative;
+  z-index: 2;
+  max-width: 400px;
+  padding: 184px 0 191px 0;
+}
+.main-block__body > *:not(:last-child) {
+  padding: 0 0 35px 0;
+}
+.main-block__title {
+  font-size: 58px;
+  font-weight: 800;
+  line-height: calc(80 / 58 * 100%); /* 137% */
+  letter-spacing: .2px;
+}
+.main-block__text {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: calc(30 / 20 * 100%);
+  letter-spacing: .2px;
+  color: #737373;
+}
+.main-block__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -10px 0;
+  gap: 10px;
+}
+.main-block__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 48px;
+  padding: 5px 36px;
+  margin: 10px 0;
+  border-radius: 37px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(28 / 14 * 100%);
+  letter-spacing: 0.2px;
+}
+.main-block__button_orange { 
+  background: #ff7b47;
+  color: #fff;
+}
+.main-block__button_border { 
+  border: solid 1px #0D5C63;
+  background: none;
+  color: #0D5C63;
+}
+.main-block__image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+/* footer ========================================= */
+.footer {
+}
+/* media ===========================================*/
+@media (max-width: 1299.98px) {
+  .main-block__image img {
+    object-position: right;
+  }
+}
 @media (max-width: 991.98px) {
   .header__menu {
     margin: 0 0 0 80px;
+  }
+  .main-block__body {
+    padding: 120px 0 191px 0;
+  }
+  .main-block__image img {
+    opacity: .5;
   }
 }
 @media (max-width: 766.98px) {
@@ -106,5 +202,15 @@ body {
   }
   .menu__link {
     font-size: 18px;
+    color: #484848;
+  }
+  .main-block__title {
+    font-size: 42px;
+  }
+  .main-block__text {
+    color: #484848;
+  }
+  .main-block__button {
+    flex: 1 1 auto;
   }
 }
