@@ -120,6 +120,10 @@ body {
 }
 .support__page {
 }
+.page__contactus {
+  margin: 68px 0 0 0;
+  background: #FAFAFA;
+}
 /* header-block =================================== */
 .header-block {
   text-align: center;
@@ -584,6 +588,50 @@ body {
   background: #FF7B47;
   color: #FFF;
 }
+/* contuct us ===================================== */
+.contactus__container {
+  
+}
+.contactus__body {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0;
+}
+.contactus__content {
+  padding: 0 0 0 20px;
+}
+.contactus__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 133%;
+  letter-spacing: 0.1px;
+  color: #252B42;
+}
+.contactus__title:not(:last-child) {
+  margin: 0 0 10px 0;
+}
+.contactus__taxt {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 143%;
+  letter-spacing: 0.2px;
+  color: #737373;
+}
+.contactus__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 40px;
+  border-radius: 8px;
+  transition: : all .3s ease 0s;
+  background: #FF7B47;
+  color: #FFF;
+}
+.contactus__button:hover {
+  border: 1px solid #FF7B47;
+  background: #FFF;
+  color: #FF7B47;
+}
 /* footer ========================================= */
 .footer {
 }
@@ -670,6 +718,12 @@ body {
   .subscribe__email {
     margin: 0;
     width: 320px;
+  }
+  .contactus__body{
+    flex-direction: column;
+  }
+  .contactus__button{
+    margin: 15px 10px;
   }
 }
 @media (max-width: 478.98px) {
