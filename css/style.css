@@ -35,7 +35,7 @@ body {
     line-height: 1;
     font-size: 14px;
     color: #252b42;
-    background: #fafafa;
+    background: #f3f3f3;
 }
 /* service ---------------------------- */
 .wrapper {
@@ -117,6 +117,8 @@ body {
   margin: 0 0 10px 0;
 }
 .subscribe__page {
+}
+.support__page {
 }
 /* header-block =================================== */
 .header-block {
@@ -485,6 +487,103 @@ body {
   background: #FF7B47;
   cursor: pointer;
 }
+/* support ======================================== */
+.support {
+  margin: 80px 0;
+}
+.support__container {
+}
+.support__header {
+  margin: 0 0 80px 0;
+}
+.header-block {
+}
+.header-block__title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 142%;
+  letter-spacing: 0.2px;
+  color: #252B42;
+}
+.header-block__sub-title {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 143%;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #737373;
+}
+.support__cards {
+  margin: 0 -15px;
+}
+.support__card > *:not(:last-child) {
+  margin: 0 0 15px 0;
+}
+.support__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #FFF;
+  padding: 50px 40px;
+}
+.card-support_black {
+  padding: 80px 40px;
+  background: #252B42;
+  color: #FFF;
+}
+.card-support_black a {
+  background: #252B42;
+  color: inherit;
+}
+.card-support_black a.card-support__button {
+  border: 1px solid #FFF;
+}
+.card-support__icon {
+  min-width: 72px;
+  min-height: 72px;
+  text-align: center;
+}
+.card-support__emails {
+  text-align: center;
+}
+.card-support__email {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 171%;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #252B42;
+}
+.card-support__email:hover {
+  text-decoration: underline;
+}
+.card-support__label {
+  text-align: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.1px;
+}
+.card-support__button {
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid #FF7B47;
+  padding: 10px 20px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 171%;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #FF7B47;
+  transition: all .3s ease 0s;
+}
+.card-support__button:hover {
+  background: #FF7B47;
+  color: #FFF;
+}
 /* footer ========================================= */
 .footer {
 }
@@ -513,6 +612,13 @@ body {
     padding: 0 0 0 40px;
   }
   .subscribe__body {
+    margin: 0;
+  }
+}
+@media (min-width: 991.98px) {
+  .support__cards {
+    display: flex;
+    align-items: center;
     margin: 0;
   }
 }
