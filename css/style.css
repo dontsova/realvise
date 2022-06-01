@@ -635,6 +635,73 @@ body {
 /* footer ========================================= */
 .footer {
 }
+.footer__top {
+  background: #17213C;
+  color: #FFF;
+}
+.footer__container {
+}
+.footer__column {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 50px 0;
+}
+.footer__group {
+  margin: 0 30px 0 10px;
+}
+.footer__group:not(:last-child) {
+  margin: 0 30px 0 10px;
+}
+.footer__label {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.1px;
+  color: inherit;
+}
+.footer__menu {
+  padding: 20px 0 0 0;
+}
+
+.menu-footer__list {
+}
+.menu-footer__link {
+  display: flex;
+  align-items: center;
+  padding: 0 0 10px 0;
+}
+.menu-footer__link img {
+  margin: 0 10px 0 0;
+}
+.menu-footer__link a {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 171%;
+  letter-spacing: 0.2px;
+  color: inherit;
+}
+.bottom-footer__content {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 0;
+}
+.bottom-footer__label {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 171%;
+  letter-spacing: 0.2px;
+  color: #737373;
+}
+.bottom-footer__social {
+  display: flex;
+  align-items: center;
+  margin: 0 40px;
+}
+.bottom-footer__social img:not(:last-child) {
+  margin: 0 20px 0 0;
+}
 /* media ===========================================*/
 @media (max-width: 1299.98px) {
   .main-block__image img {
@@ -692,6 +759,9 @@ body {
   .whoweare__content {
     padding: 0 0 40px 0;
   }
+  .footer__group:not(:last-child) {
+    margin: 0 30px 30px 10px;
+  }
 }
 @media (max-width: 766.98px) {
   .header__menu {
@@ -724,6 +794,9 @@ body {
   }
   .contactus__button{
     margin: 15px 10px;
+  }
+  .footer__group {
+    flex: 1 0 33%;
   }
 }
 @media (max-width: 478.98px) {
@@ -765,6 +838,13 @@ body {
     border-radius: 8px;
     margin: 0 0 0 210px;
   }
+  .bottom-footer__content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .bottom-footer__social {
+    margin: 20px 0 0 0;
+  }
 }
 @media (max-width: 384.98px) {
   .subscribe__email {
@@ -772,5 +852,8 @@ body {
   }
   .subscribe__button {
     margin: 0 0 0 150px;
+  }
+  .footer__group {
+    flex: 1 0 50%;
   }
 }
