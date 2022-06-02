@@ -1,4 +1,4 @@
-/* nulling =========================== */
+/* nulling ===================================== */
 *,
 ::before,
 ::after {
@@ -37,7 +37,7 @@ body {
     color: #252b42;
     background: #f3f3f3;
 }
-/* service ---------------------------- */
+/* service -------------------------------------- */
 .wrapper {
   min-height: 100%;
   overflow: hidden;
@@ -61,7 +61,7 @@ body {
   left: 0;
   object-fit: cover;
 }
-/* Header ============================= */
+/* Header ======================================== */
 .header {
   position: absolute;
   width: 100%;
@@ -104,21 +104,11 @@ body {
 .page {
   flex: 1 1 auto;
 }
-.page__main-block {
-}
-.page__advantages {
-}
-.page__advices {
-}
 .page__whoweare {
   padding: 80px 0;
 }
 .clients__page:not(:last-child) {
   margin: 0 0 10px 0;
-}
-.subscribe__page {
-}
-.support__page {
 }
 .page__contactus {
   margin: 68px 0 0 0;
@@ -138,7 +128,6 @@ body {
 .header-block__sub-title {
   color: #737373;
   line-height: calc(57 / 40 * 100%);
-  
 }
 /* main-block ===================================== */
 .main-block {
@@ -243,8 +232,6 @@ body {
 .advantages {
   padding: 80px 0;
 }
-.advantages__container {
-}
 .advantages__header {
   margin: 0 0 50px 0;
 }
@@ -257,7 +244,6 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
-
 }
 .advantages__item {
   display: flex;
@@ -292,12 +278,8 @@ body {
 .advices {
   padding: 80px 0;
 }
-.advices__container {
-}
 .advices__header {
   margin: 45px 0;
-}
-.advices__body {
 }
 .advices__column {
   display: flex;
@@ -335,12 +317,7 @@ body {
   display: flex;
   justify-content: center;
 }
-
 /* whoweare ======================================= */
-.whoweare {
-}
-.whoweare__container {
-}
 .whoweare__header {
   margin: 0 0 100px 0;
 }
@@ -380,19 +357,11 @@ body {
   letter-spacing: 0.2px;
   color: #737373;
 }
-.whoweare__items {
-}
 .whoweare__item {
   padding: 30px 0 0 0;
   display: flex;
   flex-direction: row;
   gap: 20px;
-}
-.item-whoweare {
-}
-.item-whoweare__icon {
-}
-.item-whoweare__body {
 }
 .item-whoweare__title {
   font-weight: 700;
@@ -409,11 +378,6 @@ body {
   color: #737373;
 }
 /* clients ======================================== */
-
-.clients {
-}
-.clients__container {
-}
 .clients__items {
   display: flex;
   flex-wrap: wrap;
@@ -437,8 +401,6 @@ body {
   height: 77px;
   width: 100%;
   background: #252B42;
-}
-.subscribe__container {
 }
 .subscribe__body {
   position: relative;
@@ -495,12 +457,8 @@ body {
 .support {
   margin: 80px 0;
 }
-.support__container {
-}
 .support__header {
   margin: 0 0 80px 0;
-}
-.header-block {
 }
 .header-block__title {
   font-weight: 700;
@@ -589,9 +547,6 @@ body {
   color: #FFF;
 }
 /* contuct us ===================================== */
-.contactus__container {
-  
-}
 .contactus__body {
   display: flex;
   justify-content: space-between;
@@ -633,13 +588,9 @@ body {
   color: #FF7B47;
 }
 /* footer ========================================= */
-.footer {
-}
 .footer__top {
   background: #17213C;
   color: #FFF;
-}
-.footer__container {
 }
 .footer__column {
   display: flex;
@@ -664,15 +615,12 @@ body {
 .footer__menu {
   padding: 20px 0 0 0;
 }
-
-.menu-footer__list {
-}
 .menu-footer__link {
   display: flex;
   align-items: center;
   padding: 0 0 10px 0;
 }
-.menu-footer__link img {
+.menu-footer__image {
   margin: 0 10px 0 0;
 }
 .menu-footer__link a {
@@ -738,6 +686,12 @@ body {
   }
 }
 @media (max-width: 991.98px) {
+  .advantages {
+    padding: 80px 0 0 0;
+  }
+  .advices {
+    padding: 20px 0 0 0;
+  }
   .header__menu {
     margin: 0 0 0 80px;
   }
@@ -756,11 +710,20 @@ body {
   .whoweare__body {
     flex-direction: column-reverse;
   }
+  .whoweare__header {
+    margin: 0 0 40px 0;
+  }
   .whoweare__content {
     padding: 0 0 40px 0;
   }
+  .whoweare__title {
+    font-size: 30px;
+  }
   .footer__group:not(:last-child) {
     margin: 0 30px 30px 10px;
+  }
+  .page__contactus {
+    margin: -80px 0 0 0;
   }
 }
 @media (max-width: 766.98px) {
