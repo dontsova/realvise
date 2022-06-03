@@ -198,13 +198,14 @@ body {
 }
 .services__column {
   display: flex;
-  gap: 30px;
 }
 .services__item {
-  max-width: 328px;
   padding: 35px 40px;
   background: #FFF;
   box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+}
+.services__item:not(:last-child) {
+  margin: 0 30px 0 0;
 }
 .item-service_green {
   background: #0D5C63;
@@ -248,7 +249,7 @@ body {
 .advantages__item {
   display: flex;
   flex-direction: column;
-  min-width: 240px;
+  min-width: 245px;
   background: #fff;
   padding: 30px 40px;
   text-align: center;
@@ -279,7 +280,7 @@ body {
   padding: 80px 0;
 }
 .advices__header {
-  margin: 45px 0;
+  margin: 0 0 45px 0;
 }
 .advices__column {
   display: flex;
@@ -386,6 +387,11 @@ body {
 .clients__item {
   flex: 0 1 16.6667%;
   text-align: center;
+}
+.clients__item:nth-child(3),
+.clients__item:nth-child(6) {
+  position: relative;
+  top: -15px;
 }
 /* subscribe ====================================== */
 .subscribe {
@@ -660,11 +666,16 @@ body {
     margin: -80px 0 0 0;
   }
   .services__column {
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
   }
   .services__item {
-    max-width: 500px;
+    flex: 1 1 45%;
+  }
+  .services__item:not(:last-child) {
+    margin: 0 0 30px 0;
+  }
+  .item-service_green{
+    flex: 1 0 100%;
   }
   .advices__column {
     justify-content: space-around;
@@ -689,7 +700,7 @@ body {
     padding: 80px 0 0 0;
   }
   .advices {
-    padding: 20px 0 0 0;
+    padding: 80px 0 0 0;
   }
   .header__menu {
     margin: 0 0 0 80px;
@@ -699,6 +710,9 @@ body {
   }
   .main-block__image img {
     opacity: .5;
+  }
+  .services__item:first-child {
+    border-right: 1px solid #0D5C63;
   }
   .header-block__title {
     font-size: 30px;
@@ -728,6 +742,9 @@ body {
 @media (max-width: 766.98px) {
   .header__menu {
     margin: 0 0 0 40px;
+  }
+  .services__body {
+    margin: 0 -15px;
   }
   .clients__items {
     row-gap: 20px;
@@ -780,6 +797,9 @@ body {
   }
   .main-block__button {
     flex: 1 1 auto;
+  }
+  .services__item:first-child {
+    border-right: none;
   }
   .advantages__column {
     flex-wrap: nowrap;
